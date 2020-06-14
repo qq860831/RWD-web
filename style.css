@@ -162,6 +162,20 @@ nav div a:hover {
     width: 100%;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    display: none;
+  }
+  nav #menu {
+    display: block;
+  }
+  nav #menu a {
+    display: none;
+  }
+  nav #menu a:nth-child(1) {
+    display: block;
+  }
+  nav #menu:hover a:nth-child(n+2) {
+    display: block;
+    padding: 20px 0;
   }
   #picture {
     width: 100%;

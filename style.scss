@@ -175,6 +175,29 @@ nav{
     nav{
         div{
             @include phone-box();
+            display: none;
+        }
+        #menu{
+            display: block;
+            // 顯示所有區塊
+
+            a{
+                display: none;
+                // 隱藏所有連結
+
+                &:nth-child(1){
+                    display: block;
+                    // 只顯示選單裡的第一個連結
+                }
+            }
+            // 滑入顯示選單
+            // nth-child(公式)
+            // an+b
+            // n+2(n會從0開始)
+            &:hover a:nth-child(n+2){
+                display: block;
+                padding: 20px 0;
+            }
         }
     }
 
