@@ -102,6 +102,10 @@ nav div a:hover {
   margin-bottom: 20px;
 }
 
+#menu {
+  display: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   nav div {
     width: 750px;
